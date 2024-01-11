@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Noticias</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+    
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .columnistas {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Modificación aquí para centrar horizontalmente */
+        }
+
+        .columnista {
+            flex-basis: calc(25% - 20px); /* Cambiado a 25% para acomodar cuatro columnistas */
+            margin-bottom: 20px;
+            margin-left: 20px; /* ajuste margen entre imagenes de columnistas*/
+            box-sizing: border-box;
+        }
+
+        .columnista img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .nombre-columnista {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .enlace-articulo {
+            display: block;
+            color: #007BFF;
+            text-decoration: none;
+            margin-top: 5px;
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Últimas Noticias</h1>
+
+        <div class="columnistas">
+            
+            <div class="columnista">
+                <img src="/css-html-prueba1/314_Bakunin_Michail_Alexandrowitsch.jpg" alt="Columnista 1">
+                <div class="nombre-columnista">Nombre del Columnista 1</div>
+                <a href="#" class="enlace-articulo">Leer Artículo 1</a>
+            </div>
+
+            <div class="columnista">
+                <img src="/css-html-prueba1/314_Bakunin_Michail_Alexandrowitsch.jpg" alt="Columnista 2">
+                <div class="nombre-columnista">Nombre del Columnista 2</div>
+                <a href="#" class="enlace-articulo">Leer Artículo 2</a>
+            </div>
+
+            <div class="columnista">
+                <img src="/css-html-prueba1/314_Bakunin_Michail_Alexandrowitsch.jpg" alt="Columnista 3">
+                <div class="nombre-columnista">Nombre del Columnista 3</div>
+                <a href="#" class="enlace-articulo">Leer Artículo 3</a>
+            </div>
+
+            <div class="columnista">
+                <img src="/css-html-prueba1/314_Bakunin_Michail_Alexandrowitsch.jpg" alt="Columnista 4">
+                <div class="nombre-columnista">Nombre del Columnista 4</div>
+                <a href="#" class="enlace-articulo">Leer Artículo 4</a>
+            </div>
+
+            <!-- Agrega más columnistas según sea necesario -->
+
+        </div>
+    </div>
+
+</body>
+</html>
